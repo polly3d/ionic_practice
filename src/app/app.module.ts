@@ -1,25 +1,42 @@
 import {NgModule} from "@angular/core";
+import {AppComponent} from "./app.component";
 import {IonicApp, IonicModule} from "ionic-angular";
-import {MyApp} from "./app.component";
-import {BasicPage} from "../pages/action-sheets/basic/pages";
+import * as ActionSheets from "../pages/action-sheets/action-sheets";
+import * as Alerts from "../pages/alerts/alerts";
+import {BadgePage} from "../pages/badges/badges";
+import * as Buttons from "../pages/buttons/buttons";
 /**
- * Created by Administrator on 2016/10/25.
+ * Created by sci-change on 2016/10/26.
  */
 
-
 @NgModule({
+    imports: [
+        IonicModule.forRoot(AppComponent)
+    ],
     bootstrap: [ IonicApp ],
     declarations: [
-        MyApp,
-        BasicPage,
-    ],
-    imports: [
-        IonicModule.forRoot(MyApp)
+        AppComponent,
+        ActionSheets.BasicPage,
+        Alerts.BasicPage,
+        Alerts.PromptAlert,
+        Alerts.RadioAlert,
+        Alerts.CheckBoxAlert,
+        BadgePage,
+        Buttons.BaseButton,
+        Buttons.ButtonInComponent,
     ],
     entryComponents: [
-        BasicPage,
+        AppComponent,
+        ActionSheets.BasicPage,
+        Alerts.BasicPage,
+        Alerts.PromptAlert,
+        Alerts.RadioAlert,
+        Alerts.CheckBoxAlert,
+        BadgePage,
+        Buttons.BaseButton,
+        Buttons.ButtonInComponent,
     ]
 })
-export class AppModule {
+export class IonicComponentShowModule {
 
 }
