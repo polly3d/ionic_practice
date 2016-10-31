@@ -3,6 +3,8 @@ import * as ActionSheets from "../pages/action-sheets/action-sheets";
 import * as Alerts from "../pages/alerts/alerts";
 import {BadgePage} from "../pages/badges/badges";
 import * as Buttons from "../pages/buttons/buttons";
+import {InAppBrowserComponent} from "../pages/in-app-browser/in-app-borwser-component";
+import {HttpTestComponent} from "../pages/http-test-component/http-test-component";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -17,5 +19,7 @@ export function getAllNavItems(): NavItem[] {
         {name: 'Badges', component: BadgePage},
         {name: 'BaseButton', component: Buttons.BaseButton},
         {name: 'ButtonInComponents', component: Buttons.ButtonInComponent},
+        {name: 'InAppBrowser', component: InAppBrowserComponent},
+        {name: 'InAppBrowser', component: HttpTestComponent},
     ]
 }

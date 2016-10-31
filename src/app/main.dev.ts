@@ -1,5 +1,5 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import {IonicComponentShowModule} from "./app.module";
+import {AppModule} from "./app.module";
 
 
-platformBrowserDynamic().bootstrapModule(IonicComponentShowModule);
+platformBrowserDynamic().bootstrapModule(AppModule);

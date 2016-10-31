@@ -5,6 +5,8 @@ import * as ActionSheets from "../pages/action-sheets/action-sheets";
 import * as Alerts from "../pages/alerts/alerts";
 import {BadgePage} from "../pages/badges/badges";
 import * as Buttons from "../pages/buttons/buttons";
+import {InAppBrowserComponent} from "../pages/in-app-browser/in-app-borwser-component";
+import {HttpTestComponent} from "../pages/http-test-component/http-test-component";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -24,6 +26,8 @@ import * as Buttons from "../pages/buttons/buttons";
         BadgePage,
         Buttons.BaseButton,
         Buttons.ButtonInComponent,
+        InAppBrowserComponent,
+        HttpTestComponent,
     ],
     entryComponents: [
         AppComponent,
@@ -35,8 +39,10 @@ import * as Buttons from "../pages/buttons/buttons";
         BadgePage,
         Buttons.BaseButton,
         Buttons.ButtonInComponent,
+        InAppBrowserComponent,
+        HttpTestComponent,
     ]
 })
-export class IonicComponentShowModule {
+export class AppModule {
 
 }
