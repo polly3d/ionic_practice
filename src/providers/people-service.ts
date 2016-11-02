@@ -16,11 +16,11 @@ export class PeopleService {
   }
 
   load() {
-      return new Promiss.resolve(resole => {
-          this.http.get('path/to/data.json')
+      return new Promise(resole => {
+          this.http.get('https://randomuser.me/api/?results=10')
               .map(res => res.json())
               .subscribe(data => {
-                  resole(data);
+                  resole(data.results);
               })
       })
   }

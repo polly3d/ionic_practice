@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {PeopleService} from "../../providers/people-service";
 
 /*
   Generated class for the HttpTestComponent page.
@@ -8,15 +9,25 @@ import { NavController } from 'ionic-angular';
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-http-test-component',
-  templateUrl: 'http-test-component.html'
+    selector: 'page-http-test-component',
+    templateUrl: 'http-test-component.html',
+    providers: [PeopleService],
 })
 export class HttpTestComponent {
 
-  constructor(public navCtrl: NavController) {}
+    people: any;
 
-  ionViewDidLoad() {
-    console.log('Hello HttpTestComponent Page');
-  }
+    constructor(private peopleService: PeopleService) {
+        this.loadPeople();
+    }
+
+    loadPeople() {
+        console.log('load people');
+        this.peopleService.load()
+            .then(data => {
+                console.log(data);
+                this.people = data;
+            });
+    }
 
 }
