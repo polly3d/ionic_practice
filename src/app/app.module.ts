@@ -7,6 +7,7 @@ import {BadgePage} from "../pages/badges/badges";
 import * as Buttons from "../pages/buttons/buttons";
 import {InAppBrowserComponent} from "../pages/in-app-browser/in-app-borwser-component";
 import {HttpTestComponent} from "../pages/http-test-component/http-test-component";
+import {PromiseTest} from "../pages/promise-test/promise-test";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -28,6 +29,7 @@ import {HttpTestComponent} from "../pages/http-test-component/http-test-componen
         Buttons.ButtonInComponent,
         InAppBrowserComponent,
         HttpTestComponent,
+        PromiseTest,
     ],
     entryComponents: [
         AppComponent,
@@ -41,6 +43,7 @@ import {HttpTestComponent} from "../pages/http-test-component/http-test-componen
         Buttons.ButtonInComponent,
         InAppBrowserComponent,
         HttpTestComponent,
+        PromiseTest,
     ]
 })
 export class AppModule {

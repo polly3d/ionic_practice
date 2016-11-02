@@ -27,6 +27,9 @@ export class HttpTestComponent {
             .then(data => {
                 console.log(data);
                 this.people = data;
+            })
+            .catch(reason => {
+                console.log(reason);
             });
     }
 
