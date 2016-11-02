@@ -17,8 +17,47 @@ export class PromiseTest {
 
   ionViewDidLoad() {
       console.dir(Promise);
-      this.testRace();
+      this.testPuzzle();
   }
+
+  testPuzzle() {
+      let p1 = this.puzzlePromise('p1');
+      p1.then(result => {
+          console.log(result);
+      })
+          .then(result => {
+              console.log('final1');
+              console.log(result);
+          });
+
+      let p2 = this.puzzlePromise('p2');
+      p2.then(result => {
+          this.puzzleTestFun();
+      })
+          .then(result => {
+              console.log('final2');
+              console.log(result);
+          });
+
+      let p3 = this.puzzlePromise('p3');
+      p3.then(result => {
+
+      });//如果非函数，typescript是会报错的。如果传入一个fun()，这是一个执行。但在ts也会报错
+  }
+
+  puzzleTestFun() {
+      console.log('puzzle test fun');
+  }
+
+  puzzlePromise(str: string) {
+      let p = new Promise((resolve,reject) => {
+          setTimeout(() => {
+              resolve(str);
+          },2000);
+      });
+      return p;
+  }
+
     //Promise.race
   testRace() {
       Promise.race([this.getImage(),this.imageTimeOut()])
