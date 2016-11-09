@@ -6,6 +6,7 @@ import * as Buttons from "../pages/buttons/buttons";
 import {InAppBrowserComponent} from "../pages/in-app-browser/in-app-borwser-component";
 import {HttpTestComponent} from "../pages/http-test-component/http-test-component";
 import {PromiseTest} from "../pages/promise-test/promise-test";
+import {IframeTest} from "../pages/iframe-test/iframe-test";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -23,5 +24,6 @@ export function getAllNavItems(): NavItem[] {
         {name: 'InAppBrowser', component: InAppBrowserComponent},
         {name: 'HttpTestComponent', component: HttpTestComponent},
         {name: 'PromiseTest', component: PromiseTest},
+        {name: 'IframeTest', component: IframeTest},
     ]
 }
