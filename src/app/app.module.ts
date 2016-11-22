@@ -9,6 +9,7 @@ import {InAppBrowserComponent} from "../pages/in-app-browser/in-app-borwser-comp
 import {HttpTestComponent} from "../pages/http-test-component/http-test-component";
 import {PromiseTest} from "../pages/promise-test/promise-test";
 import {IframeTest} from "../pages/iframe-test/iframe-test";
+import {VideoTest} from "../pages/video-test/video-test";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -32,6 +33,7 @@ import {IframeTest} from "../pages/iframe-test/iframe-test";
         HttpTestComponent,
         PromiseTest,
         IframeTest,
+        VideoTest,
     ],
     entryComponents: [
         AppComponent,
@@ -47,6 +49,7 @@ import {IframeTest} from "../pages/iframe-test/iframe-test";
         HttpTestComponent,
         PromiseTest,
         IframeTest,
+        VideoTest,
     ]
 })
 export class AppModule {
