@@ -13,10 +13,26 @@ import { NavController } from 'ionic-angular';
 })
 export class VideoTest {
 
-  constructor(public navCtrl: NavController) {}
+    constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello VideoTest Page');
-  }
+    videoURL: any = [
+        {name:'香港卫视',url:'http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8'},
+        {name:'凤凰中文HD',url:'http://218.203.106.12:5580/ysten-business/live/fhchinese/yst.m3u8'},
+        {name:'凤凰资讯',url:'http://119.167.138.7/live/zixun.m3u8'},
+        {name:'TV8',url:'http://202.102.79.114:554/live/tvb8.stream/playlist.m3u8'},
+        {name:'苹果官方m3u8',url:'http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8'},
+    ];
+
+    currentURL: string;
+
+
+    ionViewDidLoad() {
+        this.currentURL = this.videoURL[0].url;
+    }
+
+    playVideo(url: string)
+    {
+        this.currentURL = url;
+    }
 
 }

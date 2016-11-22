@@ -15,5 +15,6 @@
 
 <ion-content padding>
     <h3>视频播放测试</h3>
-    <video src="http://wshls.acgvideo.com/live/live_752869_9917726/playlist.m3u8"></video>
+    <video width="100%" [src]="currentURL" autoplay controls></video>
+    <button *ngFor="let item of videoURL" (click)="playVideo(item.url)" ion-button>{{ item.name }}</button>
 </ion-content>
