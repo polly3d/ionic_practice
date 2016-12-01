@@ -70,3 +70,93 @@ $colors: (
 
 $ionicons-font-path: "../assets/fonts";
 @import "ionicons";
+
+//ibiart custom icon font
+@font-face {
+  font-family: "ibiartfont";
+  src:url("#{$ionicons-font-path}/ibiartfont.eot?v=#{$ionicons-version}");
+  src:url("#{$ionicons-font-path}/ibiartfont.eot?v=#{$ionicons-version}#iefix") format("embedded-opentype"),
+  url("#{$ionicons-font-path}/ibiartfont.woff?v=#{$ionicons-version}") format("woff"),
+  url("#{$ionicons-font-path}/ibiartfont.ttf?v=#{$ionicons-version}") format("truetype"),
+  url("#{$ionicons-font-path}/ibiartfont.svg?v=#{$ionicons-version}#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ion {
+  font-family: "Ionicons","ibiartfont";
+}
+
+.ion-ios-icn_help:before,
+.ion-ios-icn_info:before,
+.ion-ios-icn_kaoqin:before,
+.ion-ios-icn_login:before,
+.ion-ios-icn_logout:before,
+.ion-ios-icn_xuncha:before,
+.ion-ios-toolBar_icon_1:before,
+.ion-ios-toolBar_icon_2:before,
+.ion-ios-toolBar_icon_3:before,
+.ion-ios-toolBar_icon_4:before,
+.ion-ios-toolBar_icon_5:before,
+.ion-md-icn_help:before,
+.ion-md-icn_info:before,
+.ion-md-icn_kaoqin:before,
+.ion-md-icn_login:before,
+.ion-md-icn_logout:before,
+.ion-md-icn_xuncha:before,
+.ion-md-toolBar_icon_1:before,
+.ion-md-toolBar_icon_2:before,
+.ion-md-toolBar_icon_3:before,
+.ion-md-toolBar_icon_4:before,
+.ion-md-toolBar_icon_5:before
+{
+  @extend .ion;
+}
+
+
+.ion-ios-icn_help:before,
+.ion-md-icn_help:before {
+  content: "\e900";
+}
+.ion-ios-icn_info:before,
+.ion-md-icn_info:before {
+  content: "\e901";
+}
+
+.ion-ios-icn_kaoqin:before,
+.ion-md-icn_kaoqin:before {
+  content: "\e902";
+}
+.ion-ios-icn_login:before,
+.ion-md-icn_login:before {
+  content: "\e903";
+}
+.ion-ios-icn_logout:before,
+.ion-md-icn_logout:before {
+  content: "\e904";
+}
+
+.ion-ios-icn_xuncha:before,
+.ion-md-icn_xuncha:before {
+  content: "\e905";
+}
+.ion-ios-toolBar_icon_1:before,
+.ion-md-toolBar_icon_1:before {
+  content: "\e906";
+}
+.ion-ios-toolBar_icon_2:before,
+.ion-md-toolBar_icon_2:before {
+  content: "\e907";
+}
+.ion-ios-toolBar_icon_3:before,
+.ion-md-toolBar_icon_3:before {
+  content: "\e908";
+}
+.ion-ios-toolBar_icon_4:before,
+.ion-md-toolBar_icon_4:before {
+  content: "\e909";
+}
+.ion-ios-toolBar_icon_5:before,
+.ion-md-toolBar_icon_5:before {
+  content: "\e90a";
+}

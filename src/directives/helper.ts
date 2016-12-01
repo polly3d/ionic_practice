@@ -8,6 +8,7 @@ import {HttpTestComponent} from "../pages/http-test-component/http-test-componen
 import {PromiseTest} from "../pages/promise-test/promise-test";
 import {IframeTest} from "../pages/iframe-test/iframe-test";
 import {VideoTest} from "../pages/video-test/video-test";
+import {SvgTest} from "../pages/svg-test/svg-test";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -27,5 +28,6 @@ export function getAllNavItems(): NavItem[] {
         {name: 'PromiseTest', component: PromiseTest},
         {name: 'IframeTest', component: IframeTest},
         {name: 'VideoTest', component: VideoTest},
+        {name: 'SvgTest', component: SvgTest},
     ]
 }

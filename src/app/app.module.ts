@@ -10,6 +10,7 @@ import {HttpTestComponent} from "../pages/http-test-component/http-test-componen
 import {PromiseTest} from "../pages/promise-test/promise-test";
 import {IframeTest} from "../pages/iframe-test/iframe-test";
 import {VideoTest} from "../pages/video-test/video-test";
+import {SvgTest} from "../pages/svg-test/svg-test";
 /**
  * Created by sci-change on 2016/10/26.
  */
@@ -34,6 +35,7 @@ import {VideoTest} from "../pages/video-test/video-test";
         PromiseTest,
         IframeTest,
         VideoTest,
+        SvgTest,
     ],
     entryComponents: [
         AppComponent,
@@ -50,6 +52,7 @@ import {VideoTest} from "../pages/video-test/video-test";
         PromiseTest,
         IframeTest,
         VideoTest,
+        SvgTest,
     ]
 })
 export class AppModule {
